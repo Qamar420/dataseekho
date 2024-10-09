@@ -1,0 +1,183 @@
+QAMAR TAHIR 
+
+Exercise 1: Comments
+Write a program that prints your name and includes both single-line and multi-line comments explaining what each part of your code does.
+ANSWER:
+# This program prints my qamartahir
+
+# Define a variable to hold my name
+my_name = "qamartahir"  # You can replace "qamartahir" with your own name
+
+"""
+The print function outputs the value of the variable 'my_name' to the console.
+In this case, it will display the name stored in the variable.
+"""
+print(my_name)  # Print the name to the console
+
+Explanation:
+Single-line comments (preceded by #) explain specific lines of code.
+Multi-line comments (enclosed in triple quotes """) provide a broader explanation of a block of code.
+Exercise 2: Error Identification
+Below is a piece of code with some intentional errors. Identify and correct the errors. Explain the type of error for each correction made.
+
+print("Welcome to Python!"
+
+result = 10 / 0              
+
+my_list = [1, 2, 3
+
+print(my_list[3])
+
+ANSWER: 
+print("Welcome to Python!"
+
+result = 10 / 0              
+
+my_list = [1, 2, 3
+
+print(my_list[3])
+print("Welcome to Python!")  # Corrected
+
+result = 10 / 2  # Changed from 0 to 2
+
+result = 10 / 2  # Changed from 0 to 2
+
+my_list = [1, 2, 3]  # Corrected
+
+print(my_list[2])  # Changed from 3 to 2
+
+print("Welcome to Python!")  # Corrected the syntax error
+
+result = 10 / 2  # Changed from 0 to 2 to avoid ZeroDivisionError
+
+my_list = [1, 2, 3]  # Added the missing closing bracket
+
+print(my_list[2])  # Changed index from 3 to 2 to avoid IndexError
+
+Exercise 3: Variable Assignment
+# Assigning values to variables
+name = "Qamartahir"          # Your name (string)
+age = 25                # Your age (integer)
+height = 5.7            # Your height in feet (float)
+is_student = True       # Whether you are a student (boolean)
+# Printing each variable with an appropriate message
+print("Name:", name)
+print("Age:", age)
+print("Height:", height, "feet")
+print("Are you a student?", is_student)
+
+Exercise 4: Descriptive Variable Names
+Rewrite the following code using descriptive variable names:
+
+a = 5
+b = 10
+c = a * b
+print(c)
+ANSWER:
+length = 5              # Length of a rectangle
+width = 10              # Width of a rectangle
+area = length * width   # Calculate the area of the rectangle
+print("Area of the rectangle:", area)
+
+Exercise 5: Numeric Types and Operations
+Perform the following operations and print the results:
+Add two integers
+Subtract a float from an integer
+Multiply a float by a complex number
+Divide an integer by zero (observe and write down the error)
+
+ANSWER:
+
+
+# Adding two integers
+int1 = 10
+int2 = 5
+addition_result = int1 + int2
+print("Addition of two integers (10 + 5):", addition_result)
+
+# Subtracting a float from an integer
+integer_value = 20
+float_value = 5.5
+subtraction_result = integer_value - float_value
+print("Subtraction of a float from an integer (20 - 5.5):", subtraction_result)
+
+# Multiplying a float by a complex number
+float_value = 3.5
+complex_number = 2 + 3j
+multiplication_result = float_value * complex_number
+print("Multiplication of a float by a complex number (3.5 * (2 + 3j)):", multiplication_result)
+
+# Dividing an integer by zero (this will raise an error)
+try:
+    division_result = integer_value / 0
+except ZeroDivisionError as e:
+    print("Error: Cannot divide by zero:", e)
+
+
+Exercise 6: Built-in Functions
+Write a program that:
+Takes a list of numbers as input from the user.
+Uses the abs(), max(), and min() functions to find the absolute values, maximum, and minimum of the numbers.
+Prints the results with appropriate messages.
+Example input: [-5, 3.2, -1, 0, 12]
+
+ANSWER:
+
+Original list of numbers: [-5.0, 3.2, -1.0, 0.0, 12.0]
+Absolute values: [5.0, 3.2, 1.0, 0.0, 12.0]
+Maximum value: 12.0
+Minimum value: -5.0
+
+
+Exercise 7: Arithmetic Operations
+Create a simple calculator program that:
+Prompts the user to enter two numbers.
+Asks the user to select an operation: addition, subtraction, multiplication, or division.
+Performs the selected operation and prints the result. Handle division by zero gracefully.
+
+ANSWER:
+# Simple calculator program
+
+# Function to perform arithmetic operations
+def calculator():
+    # Prompt the user to enter two numbers
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+
+    # Ask the user to select an operation
+    print("Select an operation:")
+    print("1. Addition (+)")
+    print("2. Subtraction (-)")
+    print("3. Multiplication (*)")
+    print("4. Division (/)")
+
+    operation = input("Enter the operation (1/2/3/4): ")
+
+    # Perform the selected operation
+    if operation == '1':
+        result = num1 + num2
+        print("Result: {} + {} = {}".format(num1, num2, result))
+    elif operation == '2':
+        result = num1 - num2
+        print("Result: {} - {} = {}".format(num1, num2, result))
+    elif operation == '3':
+        result = num1 * num2
+        print("Result: {} * {} = {}".format(num1, num2, result))
+    elif operation == '4':
+        if num2 == 0:
+            print("Error: Cannot divide by zero.")
+        else:
+            result = num1 / num2
+            print("Result: {} / {} = {}".format(num1, num2, result))
+    else:
+        print("Invalid operation selected.")
+
+# Run the calculator function
+calculator()
+
+
+
+
+
+
+
